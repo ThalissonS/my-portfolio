@@ -13,13 +13,16 @@ const CustomButton = styled("button")(() => ({
     border: `1px solid ${theme.palette.primary.contrastText}`,
     borderRadius: "3px",
     padding: "10px 15px",
-    width: "100%",
+    width: "100%", 
+    maxWidth: "300px", // Sugestão para o botão não esticar demais
     color: theme.palette.primary.contrastText,
     display: "inline-flex",
     alignItems: "center",
+    justifyContent: "center", // <--- ISSO centraliza o texto e o ícone
     gap: "10px",
+    cursor: "pointer", // Bom adicionar para indicar que é clicável
     '&:hover': {
-        backgroundColor: theme.palette.secondary.light,
+                    backgroundColor: theme.palette.secondary.light,
     }
 }));
 

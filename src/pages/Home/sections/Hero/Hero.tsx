@@ -10,7 +10,14 @@ const StyledHero = styled("div")(({ theme }) => ({
         height: "100vh",
         display: "flex",
         alignItems: "center",
-        
+        [theme.breakpoints.up("xs")]: { // <= mobile
+            paddingTop: "100px",
+
+        },
+         [theme.breakpoints.up("md")]: { // > mobile
+            paddingTop: "0px",
+            
+        },
     }))
 
 const StyledImg = styled("img")(({ theme })=>({
