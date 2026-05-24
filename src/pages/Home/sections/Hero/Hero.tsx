@@ -56,7 +56,8 @@ return (
                             </StyledButton>
                         </Grid>
                         <Grid size={{ xs: 12, md: 4 }} display={'flex'} justifyContent={"center"}>
-                            <StyledButton href="mailto:thalissonpro1@gmail.com">
+                            <StyledButton href="https://mail.google.com/mail/?view=cm&to=thalissonpro1@gmail.com"
+                                target="_blank">
                                 <EmailIcon />
                                 <Typography>
                                     Contact me
